@@ -3,11 +3,11 @@ import 'package:mobilelab3/base/res/styles/app_styles.dart';
 
 class AppDoubleText extends StatelessWidget {
   const AppDoubleText({
-    Key? key,
+    super.key,
     required this.bigText,
     required this.smallText,
     required this.func,
-  }) : super(key: key);
+  });
   final String bigText;
   final String smallText;
   final VoidCallback func;

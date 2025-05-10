@@ -16,7 +16,6 @@ class AppLayoutbuilderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
-        print("${(constraints.constrainWidth() / randomDivider).floor()}");
         return Flex(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           direction: Axis.horizontal,

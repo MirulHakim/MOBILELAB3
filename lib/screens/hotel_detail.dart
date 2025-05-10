@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:mobilelab3/base/res/styles/app_styles.dart';
 import 'package:mobilelab3/base/utils/all_json.dart';
 import 'package:mobilelab3/controller/text_expansion_controller.dart';
@@ -17,7 +16,6 @@ class _HotelDetailState extends State<HotelDetail> {
   @override
   void didChangeDependencies() {
     var args = ModalRoute.of(context)!.settings.arguments as Map;
-    print(args["index"]);
     index = args["index"];
     super.didChangeDependencies();
   }
@@ -149,7 +147,7 @@ class ExpandedTextWidget extends StatelessWidget {
           textWidget,
           GestureDetector(
             onTap: () {
-              controller.toogleExpansion();
+              controller.toggleExpansion();
             },
             child: Text(
               controller.isExpanded.value ? "Less" : "More",

@@ -10,7 +10,7 @@ import 'package:mobilelab3/base/widgets/ticket_view.dart';
 import 'package:mobilelab3/screens/home/widgets/hotel.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -89,7 +89,6 @@ class HomeScreen extends StatelessWidget {
                               (singleTicket) => GestureDetector(
                                 onTap: () {
                                   var index = ticketList.indexOf(singleTicket);
-                                  print("I am tapped on the ticket $index");
                                   Navigator.pushNamed(
                                     context,
                                     AppRoutes.ticketScreen,

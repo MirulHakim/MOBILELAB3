@@ -22,7 +22,6 @@ class AllTickets extends StatelessWidget {
                           // Handle ticket tap
                           onTap: () {
                             var index = ticketList.indexOf(singleTicket);
-                            print("I am tapped on the ticket $index");
                             Navigator.pushNamed(
                               context,
                               AppRoutes.ticketScreen,

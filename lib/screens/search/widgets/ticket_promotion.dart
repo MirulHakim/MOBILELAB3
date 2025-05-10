@@ -125,7 +125,7 @@ class TicketPromotion extends StatelessWidget {
                       SizedBox(width: 5),
                       Text(
                         "🥰",
-                        style: TextStyle(fontSize: 40),
+                        style: TextStyle(fontSize: 50),
                       ),
                       SizedBox(width: 5),
                       Text(

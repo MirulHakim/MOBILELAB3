@@ -5,6 +5,7 @@ class BottomNavController extends GetxController {
 
 
   void onItemTapped(int index) {
+    print("My tab val $index");
     selectedIndex.value = index;
   }
 

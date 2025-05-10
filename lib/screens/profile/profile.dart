@@ -257,6 +257,7 @@ class ProfileScreen extends StatelessWidget {
                 SizedBox(height: 25),
                 InkWell(
                   onTap: () {
+                    print("Tapped");
                   },
                   child: Text(
                     "How to get more miles",

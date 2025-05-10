@@ -84,7 +84,6 @@ class HotelGridView extends StatelessWidget {
                 hotel["place"],
                 style: AppStyles.headLineStyle3.copyWith(
                   color: AppStyles.kakiColor,
-                  fontSize: 16
                 ),
               ),
             ),
@@ -96,7 +95,6 @@ class HotelGridView extends StatelessWidget {
                     hotel["destination"],
                     style: AppStyles.headLineStyle3.copyWith(
                       color: Colors.white,
-                      fontSize: 15
                     ),
                   ),
                 ),

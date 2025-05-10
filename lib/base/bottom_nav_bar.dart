@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:mobilelab3/controller/bottom_nav_controller.dart';
 import 'package:mobilelab3/screens/home/home_screen.dart';
 import 'package:mobilelab3/screens/profile/profile.dart';
@@ -23,6 +24,7 @@ class BottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("My tab val ${controller.selectedIndex.value}");
     return Obx(() {
       return Scaffold(
         // appBar: AppBar(

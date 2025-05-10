@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:mobilelab3/base/bottom_nav_bar.dart';
 import 'package:mobilelab3/base/utils/app_routes.dart';
 import 'package:mobilelab3/screens/all_tickets.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false, 
       routes: {
         AppRoutes.homePage: (context) => BottomNavBar(),
